@@ -168,6 +168,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: theme => ({
+        'background': "url('/public/assets/img/background.png')",
+      }) 
     },
   },
   variants: {
