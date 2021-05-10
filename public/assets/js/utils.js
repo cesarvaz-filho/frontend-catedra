@@ -34,7 +34,7 @@ function formatDate(date) {
 }
 
 async function fetchAPI(resource) {
-  const response = await fetch(`http://localhost:3333/${resource}`);
+  const response = await fetch(`https://api-catedra.herokuapp.com/${resource}`);
   const data = await response.json();
   
   return data;
@@ -99,8 +99,6 @@ async function loadTable() {
     table.innerHTML = output
   }) 
 }
-
-
 
 async function loadQuantityStatusTraining(status_training) {
   const trainings = await fetchAPI('trainings');

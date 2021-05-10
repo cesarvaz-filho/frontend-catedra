@@ -3,7 +3,7 @@
 const selectGroup = document.querySelector('.select_groups');
 
 async function fetchAPI(resource) {
-  const response = await fetch(`http://localhost:3333/${resource}`);
+  const response = await fetch(`https://api-catedra.herokuapp.com/${resource}`);
   const data = await response.json();
   
   return data;
