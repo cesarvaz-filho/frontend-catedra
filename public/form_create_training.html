@@ -674,6 +674,7 @@
             <div
               class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
             >
+<<<<<<< HEAD
               <label class="block text-sm">
                 <span class="text-gray-700 dark:text-gray-400">Tema</span>
                 <input
@@ -717,6 +718,26 @@
                 <div class="mt-2">
                   <label
                     class="inline-flex items-center text-gray-600 dark:text-gray-400"
+=======
+              <form action="https://api-catedra.herokuapp.com/trainings" method="post">
+                <label class="block text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Tema</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Ex: Alinhamento de Perfil"
+                    name="name"
+                  />
+                </label>
+  
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Grupo
+                  </span>
+                  <select
+                    class="select_groups block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-multiselect focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                    multiple
+                    name="group"
+>>>>>>> 685d9471980a1be2c860248acb2d37e942cbe102
                   >
                     <span class="mr-6">Início</span>
                     <input
@@ -725,6 +746,7 @@
                       name="start_date"
                     />
                     
+<<<<<<< HEAD
                     <span class="ml-6 mr-6">Fim</span>
                     <input
                       type="date"
@@ -732,6 +754,93 @@
                       name="end_date"
                     />
                   </label>
+=======
+                  </select>
+                </label>
+  
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Carga Horária</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Escreva em minutos. Ex: 90"
+                    name="workload"
+                  />
+                </label>
+  
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Aderência</span>
+                  <input
+                    class="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Escreva em minutos. Ex: 85"
+                    name="adherance"
+                  />
+                </label>
+  
+                <div class="mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Data 
+                  </span>
+                  <div class="mt-2">
+                    <label
+                      class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                    >
+                      <span class="mr-6">Início</span>
+                      <input
+                        type="date"
+                        class="text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="start_date"
+                      />
+                      
+                      <span class="ml-6 mr-6">Fim</span>
+                      <input
+                        type="date"
+                        class="text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="end_date"
+                      />
+                    </label>
+                  </div>
+                </div>
+  
+                <div class="mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Status 
+                  </span>
+                  <div class="mt-2">
+                    <label
+                      class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="status"
+                        value="pendente"
+                      />
+                      <span class="ml-2">Pendente</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="status"
+                        value="concluido"
+                      />
+                      <span class="ml-2">Concluído</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="status"
+                        value="cancelado"
+                      />
+                      <span class="ml-2">Cancelado</span>
+                    </label>
+                  </div>
+>>>>>>> 685d9471980a1be2c860248acb2d37e942cbe102
                 </div>
               </div>
 
