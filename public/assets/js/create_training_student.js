@@ -35,27 +35,16 @@ async function postRequest(url, data) {
   return await response.json();
 }
 
+/*
 function post() {
-  const name = document.querySelector('.input-name').value;
-  const status = document.querySelector('.input-status').value;
-  const workload = document.querySelector('.input-workload').value;
-  const start_date = document.querySelector('.input-start_date').value;
-  const end_date = document.querySelector('.input-end_date').value;
   
-  const data = {
-    name, 
-    status, 
-    workload, 
-    start_date, 
-    end_date
-  }
-
   postRequest('https://api-catedra.herokuapp.com/trainings', data)
   .then(data => console.log(data)) 
   .catch(error => console.error(error))
 
-  alert(`O treinamento ${name} foi registrado.`)
+  alert(`O treinamento ${} foi registrado.`)
 }
+*/
 
 (async () => {
   await loadGroups()

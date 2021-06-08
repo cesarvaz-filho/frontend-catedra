@@ -1,33 +1,26 @@
 
-const btnCreateGroup = document.querySelector('.btn-create-group');
-const inputGroupName = document.querySelector('.form-input-group');
-
-btnCreateGroup.addEventListener('click', async (e) => {
-  e.preventDefault();
-  
-  fetch(`https://api-catedra.herokuapp.com/groups`, {
+async function postRequest(url, data) {
+  const response = await fetch(url, {
+    credentials: 'same-origin',
     method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json; charset=UTF-8'
-    },
-    body: JSON.stringify({ name: inputGroupName.value })
-  }).then(response => response.json())
-    .then(data => console.log(data));
-})
-
-async function fetchAPI(resource) {
-  const res = await fetch(`https://api-catedra.herokuapp.com/${resource}`, {
-    method: 'post',
-    headers: {
-      'Accept': 'application/json',
+    body: JSON.stringify(data),
+    headers: new Headers({
       'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ name: inputGroupName.value })
+    }),
   });
-  console.log(res.json());
-  return await res.json();
-  
+  return await response.json();
 }
 
+function post() {
+  const name = document.querySelector('.input-name').value;
+  
+  const data = {
+    name
+  }
 
+  postRequest('https://api-catedra.herokuapp.com/groups', data)
+  .then(data => console.log(data)) 
+  .catch(error => console.error(error))
+
+  alert(`O grupo ${name} foi registrado.`)
+}

@@ -297,7 +297,7 @@ async function loadQuantityStatusTraining(status_training) {
   const statusTrainings = trainings.reduce((acc, training) => {
     const { status } = training;
     acc[status] ? acc[status]++ : acc[status] = 1;
-    //status === status_training ? acc++ : acc
+    
     return acc
   }, {});
   return statusTrainings
@@ -305,10 +305,10 @@ async function loadQuantityStatusTraining(status_training) {
 
 async function loadPanels() {
   const quantity = await loadQuantityStatusTraining();
-
-  chart_pending.innerHTML = quantity.pendente;
-  chart_canceled.innerHTML = quantity.cancelado;
-  chart_concluded.innerHTML = quantity['concluído'];
+  
+  chart_pending.innerHTML = quantity.pendente || '0';
+  chart_canceled.innerHTML = quantity.cancelado || '0';
+  chart_concluded.innerHTML = quantity['concluído'] || '0';
 }
 
 (async () => {

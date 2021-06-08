@@ -13,7 +13,7 @@
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
-    <script src="./assets/js/init-alpine.js"></script>
+    <script src="./assets/js/init-alpine.js" ></script>
   </head>
   <body>
     <div
@@ -674,116 +674,117 @@
             <div
               class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800"
             >
-              <label class="block text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Tema</span>
-                <input
-                  class="input-name block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Ex: Alinhamento de Perfil"
-                />
-              </label>
+              <form>
+                <label class="block text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Tema</span>
+                  <input
+                    class="input-name block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Ex: Alinhamento de Perfil"
+                  />
+                </label>
 
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Grupo
-                </span>
-                <select
-                  class="select_groups block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-multiselect focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                  multiple
-                >
-                  
-                </select>
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Carga Horária</span>
-                <input
-                  class="workload block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                  placeholder="Escreva em minutos. Ex: 90"
-                />
-              </label>
-
-              <label class="block mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">Aderência</span>
-                <input
-                  class="adherance block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input
-                  placeholder="Escreva em minutos. Ex: 85"
-                />
-              </label>
-
-              <div class="mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Data 
-                </span>
-                <div class="mt-2">
-                  <label
-                    class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Grupo
+                  </span>
+                  <select
+                    class="select_groups block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-multiselect focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                    multiple
                   >
-                    <span class="mr-6">Início</span>
-                    <input
-                      type="date"
-                      class="start_date text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                      name="start_date"
-                    />
-                    
-                    <span class="ml-6 mr-6">Fim</span>
-                    <input
-                      type="date"
-                      class="end_date text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                      name="end_date"
-                    />
-                  </label>
+                  </select>
+                </label>
+
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Carga Horária</span>
+                  <input
+                    class="input-workload block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Escreva em minutos. Ex: 90"
+                  />
+                </label>
+
+                <label class="block mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">Aderência</span>
+                  <input
+                    class="adherance block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                    placeholder="Escreva em minutos. Ex: 85"
+                  />
+                </label>
+
+                <div class="mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Data 
+                  </span>
+                  <div class="mt-2">
+                    <label
+                      class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                    >
+                      <span class="mr-6">Início</span>
+                      <input
+                        type="date"
+                        class="input-start_date text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                        name="start_date"
+                      />
+                      
+                      <span class="ml-6 mr-6">Fim</span>
+                      <input
+                        type="date"
+                        class="input-end_date text-purple-600 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
+                        name="end_date"
+                      />
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <div class="mt-4 text-sm">
-                <span class="text-gray-700 dark:text-gray-400">
-                  Status 
-                </span>
-                <div class="mt-2">
-                  <label
-                    class="inline-flex items-center text-gray-600 dark:text-gray-400"
-                  >
-                    <input
-                      type="radio"
-                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                      name="accountType"
-                      value="pendente"
-                    />
-                    <span class="ml-2">Pendente</span>
-                  </label>
-                  <label
-                    class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
-                  >
-                    <input
-                      type="radio"
-                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                      name="accountType"
-                      value="concluido"
-                    />
-                    <span class="ml-2">Concluído</span>
-                  </label>
-                  <label
-                    class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
-                  >
-                    <input
-                      type="radio"
-                      class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
-                      name="accountType"
-                      value="cancelado"
-                    />
-                    <span class="ml-2">Cancelado</span>
-                  </label>
+                <div class="mt-4 text-sm">
+                  <span class="text-gray-700 dark:text-gray-400">
+                    Status 
+                  </span>
+                  <div class="mt-2">
+                    <label
+                      class="inline-flex items-center text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="input-status text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="accountType"
+                        value="pendente"
+                      />
+                      <span class="ml-2">Pendente</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="accountType"
+                        value="concluido"
+                      />
+                      <span class="ml-2">Concluído</span>
+                    </label>
+                    <label
+                      class="inline-flex items-center ml-6 text-gray-600 dark:text-gray-400"
+                    >
+                      <input
+                        type="radio"
+                        class="text-purple-600 form-radio focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray"
+                        name="accountType"
+                        value="cancelado"
+                      />
+                      <span class="ml-2">Cancelado</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
 
-              <div class="mt-6">
-                <button
-                  onclick="postRequest()"
-                  class="btn-create-trn px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                >
-                  Salvar
-                </button>
-              </div>
+                <div class="mt-6">
+                  <button
+                    onclick="post()"
+                    class="btn-create-trn px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
+                  >
+                    Salvar
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </main>
