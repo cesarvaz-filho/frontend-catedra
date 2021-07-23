@@ -11,11 +11,11 @@ async function postRequest(url, data) {
 }
 
 function post() {
-  const data = document.querySelector('.input_csv').value;
+  const data = document.querySelector('.input_csv').files[0];
 
   postRequest('https://api-catedra.herokuapp.com/register', data)
     .then(data => console.log(data))
     .catch(error => console.error(error))
 
-  alert(`O arquivo ${name} foi registrado.`)
+  alert(`O arquivo foi registrado.`)
 }
